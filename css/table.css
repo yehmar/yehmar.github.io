@@ -1,0 +1,104 @@
+.table-responsive {
+    overflow-x                : hidden;
+}
+
+.table {
+    --bs-table-bg           : rgba(0, 0, 0, 0);
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg   : rgba(0, 0, 0, 0.05);
+    --bs-table-active-color : #212529;
+    --bs-table-active-bg    : rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color  : #212529;
+    --bs-table-hover-bg     : rgba(0, 0, 0, 0.075);
+    width                   : 100%;
+    margin-bottom           : 1rem;
+    color                   : #212529;
+    vertical-align          : top;
+    border-color            : #dee2e6
+}
+
+
+.table>tbody {
+    vertical-align: inherit
+}
+
+.table>thead {
+    vertical-align: bottom
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor
+}
+
+.border-light {
+    border-color: #f8f9fa !important
+}
+
+.border-0 {
+    border: 0 !important
+}
+
+.align-items-center {
+    align-items   : center !important
+}
+
+.p-3 {
+    padding: 1rem !important
+}
+.align-middle {
+    vertical-align: middle !important
+}
+.quantity {
+    display       : flex;
+    align-items   : center;
+    max-width     : 6rem;
+    min-width     : 6rem;
+    padding       : 0.5rem 0
+}
+.quantity button {
+    border         : none;
+    width          : 2rem;
+    min-width      : 2rem;
+    height         : 2rem;
+    display        : block;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-size      : 0.6rem
+}
+
+.quantity button:focus,
+.quantity button:hover {
+    border : none;
+    outline: none
+}
+
+.quantity input {
+    text-align: center
+}
+
+.btn-outline-primary {
+    color       : #4650dd;
+    border-color: #4650dd
+}
+
+.btn-outline-primary:hover {
+    color           : #fff;
+    background-color: #4650dd;
+    border-color    : #4650dd
+}
+.text-start {
+    text-align: left !important
+}
+
+.text-end {
+    text-align: right !important
+}
+.text-md-end {
+    text-align: right !important
+}
+
+small,
+.small {
+    font-size: .875em
+}

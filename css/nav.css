@@ -1,0 +1,142 @@
+nav {
+    background: white;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 1.5rem 2rem;
+}
+
+.navbar{
+    display: flex;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+.navbar>.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav{
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    transition: var(--transition);
+}
+  
+.navbar-nav a {
+    background: white;
+    color: grey;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+}
+
+.navbar-nav-btn{
+    transition: var(--transition); 
+}
+
+.nav-link{
+    padding-left: .5rem;
+    padding-right: .5rem;
+    display: block;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    transition: var(--transition);
+}
+
+.navbar-brand{
+    color: grey;
+    line-height: inherit;
+    display: inline-block;
+    margin-right: 1.5rem;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    text-decoration: none;
+}
+
+.trigger {
+    display: none;
+}
+
+.nav-toggle{
+    margin-right: 1rem;
+}
+
+#hamburger:checked~.navbar-nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    background-color: white;
+    height: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    transition: var(--transition);
+}
+
+@media screen and (min-width: 64em) {
+    .navbar{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .navbar label{
+        display: none;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .navbar-nav a {
+        background: white;
+        color: grey;
+        display: inline-block;
+        margin-right: 0.5rem;
+        width: 100%;
+        transition: var(--transition);
+    }
+
+    .navbar-nav a:hover {
+        color: var(--link-color-hover);
+    }
+
+    .navbar-nav-btn{
+        line-height: inherit;
+        display: flex;
+        align-items: center; 
+        justify-content: flex-end;
+    }
+
+    .navbar-nav-btn li{
+        display: inline-flex;
+    }
+    
+    .navbar-nav-btn li a{
+        background: transparent;
+        font-weight: bold;
+    }
+    
+    .navbar-nav-btn li a:hover{
+        color: var(--link-color-hover);
+    } 
+
+}
